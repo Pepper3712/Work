@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<style>
+h2 {
+  font-family: "Allerta Stencil";font-size: 52px;
+}
+h3{
+  color: white;
+  size: 10px;
+}
+p {
+  font-family: 'Open Sans';font-size: 10px;
+}
+
+textarea {
+  font-family: 'Open Sans';font-size: 15px;
+}
+
+.button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+.flex-container {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 97%;
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 70%;
+  width: 20%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style-type:none;
+}
+
+.sidebar li {
+   font-family: "Allerta Stencil";font-size: 30px;
+   margin:0 0 100px 0; 
+}
+
+.sidebar li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.sidebar li a:hover {
+  color: #e98074;
+}
+
+.vl {
+  background-color: #e98074;
+  width: 5px;
+  height: 90%;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 79%;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.verticaldisplay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.horizontaldisplay{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.footer{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: gray;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3%;
+  padding-bottom: 0px;
+  padding-right: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: gray;
+  color: #e98074;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: gray;
+  color: #e98074;
+}
+</style>
+</head>
+
+<body>
+
+<div class="flex-container">
+  <div class = "sidebar">
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="contactus.html">CONTACT US</a></li>
+	  <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </div>
+  
+  <div class = "vl">
+    <p></p>
+  </div>
+  
+  <div class = "main">
+    <h2>Contact Us</h2>
+    <textarea rows="20" cols="50"></textarea>
+	<div class = "horizontaldisplay">
+	  <textarea rows="1" cols="90">Email</textarea>
+	  <h3> __ </h3>
+      <button class="button">Send</button>
+	</div>
+	<div class = "horizontaldisplay">
+      <i class="fa fa-phone"></i>
+	  <p>01271 0000</p>
+	</div>
+	<div class = "horizontaldisplay">
+	  <i class="fa fa-home"></i>
+	  <div class = "verticaldisplay">
+	    <p>EX32 123</p>
+	    <p>Lorum Road</p>
+	    <p>Ipsum Street</p>
+	  </div>
+  </div> 
+</div>
+
+<div class = "footer">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+</div>
+</body>
+
+</html>
